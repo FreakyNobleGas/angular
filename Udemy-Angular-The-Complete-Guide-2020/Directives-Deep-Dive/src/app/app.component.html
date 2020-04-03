@@ -7,8 +7,9 @@
       <br /><br />
       <ul class="list-group">
         <div *ngIf="onlyOdd">
+          <!-- ngClass will apply a CSS class based on a condition, while ngStyle defines a style and also bases it off a condition -->
           <li 
-          class="list-group-item" 
+          class="list-group-item"
           [ngClass]="{odd: num % 2 !== 0}"
           [ngStyle]="{backgroundColor: num % 2 !== 0 ? 'yellow' : transparent}"
           *ngFor="let num of odd">
