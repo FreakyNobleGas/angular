@@ -26,6 +26,8 @@
           </li>
         </div>
       </ul>
+      <!-- We don't need square brackets here because we are using a directive and have imported the directive in app.module.ts -->
+      <p appBasicHighlight>Style me with basic directive!</p>
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
